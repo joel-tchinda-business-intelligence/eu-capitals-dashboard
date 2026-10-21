@@ -19,5 +19,15 @@ Je pense que Madrid va gagner. Les villes très proches (Bruxelles,...) ont un b
 Oui, c'est bien Madrid qui est arrivée en tête, avec un score météo de 0,81 et un score CO₂ de 0,71. Ça confirme ce que j'avais compris de la formule 50/50 : elle favorise les villes qui sont correctes sur les deux critères, plutôt que celles qui sont excellentes sur un seul.
 
 ## 7. Monitoring
+## 7. Monitoring
+
+Le seul indice visible sur la page publique, c'est la ligne « Data last updated » tout en bas, qui affiche la date `generated_at` écrite par le script à chaque exécution. Si le workflow est désactivé par GitHub ou s'il plante à chaque fois, le fichier rankings.json n'est plus mis à jour, donc cette date reste bloquée et un visiteur attentif pourrait remarquer qu'elle date de plusieurs semaines.
+
+Mais à mon avis ce n'est pas suffisant tout seul :
+- la ligne est en petit, en gris et sous les graphiques, presque personne ne va la lire ;
+- un visiteur ne sait pas que les données sont censées être mises à jour chaque lundi, donc il ne peut pas savoir qu'une date ancienne est anormale ;
+- et le titre dit « next week » alors que les prévisions peuvent dater d'il y a un mois, donc la recommandation devient fausse sans que rien ne l'indique.
+
+J'ajouterais un calcul qui compare `generated_at` à la date du jour, et qui affiche un bandeau rouge bien visible en haut de la page du type « Attention : données vieilles de plus de 8 jours, la recommandation n'est peut-être plus valable » si la dernière mise à jour date de plus d'une semaine.
 
 ## 8. Extension : changement de ville de départ
