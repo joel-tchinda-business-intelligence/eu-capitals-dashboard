@@ -10,8 +10,10 @@ Le commentaire du code confirme ça : avec une seule requête groupée, il n'y a
 Avant de publier pour de vrais utilisateurs, je vérifierais la valeur dans la dernière publication officielle des facteurs DEFRA et j'indiquerais la source et l'année directement sur la page. Je ferais aussi attention au fait qu'un seul facteur pour toutes les villes est une simplification. Donc idéalement je proposerais plusieurs facteurs selon la distance, ou même le train pour les trajets courts.
 
 ## 4. Relatif vs absolu (normalisation)
+non, la vraie température de la capitale moyenne ne change pas, c'est une mesure. Par contre son score change : si on ajoute une ville encore plus froide, le minimum de la liste baisse, et du coup la capitale moyenne se retrouve plus haut sur l'échelle 0-1 sans que sa météo ait bougé. Ça montre qu'un KPI construit avec une normalisation est relatif : un score de 0,8 ne veut pas dire qu'il fait beau , ça veut dire il fait plus beau que la plupart des autres villes de cette liste. Si on change la liste, on change les scores.
 
 ## 5. Ma prédiction
+Je pense que Madrid va gagner. Les villes très proches (Bruxelles,...) ont un bon score CO₂ mais une météo probablement moyenne fin octobre, et les villes très au sud ont du soleil mais sont trop loin. Avec un 50-50, une ville au milieu avec une météo correcte et une distance raisonnable devrait sortir en tête.
 
 ## 6. Ma prédiction était-elle juste ?
 
