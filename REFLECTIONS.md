@@ -16,6 +16,7 @@ non, la vraie température de la capitale moyenne ne change pas, c'est une mesur
 Je pense que Madrid va gagner. Les villes très proches (Bruxelles,...) ont un bon score CO₂ mais une météo probablement moyenne fin octobre, et les villes très au sud ont du soleil mais sont trop loin. Avec un 50-50, une ville au milieu avec une météo correcte et une distance raisonnable devrait sortir en tête.
 
 ## 6. Ma prédiction était-elle juste ?
+Oui, c'est bien Madrid qui est arrivée en tête, avec un score météo de 0,81 et un score CO₂ de 0,71. Ça confirme ce que j'avais compris de la formule 50/50 : elle favorise les villes qui sont correctes sur les deux critères, plutôt que celles qui sont excellentes sur un seul.
 
 ## 7. Monitoring
 
