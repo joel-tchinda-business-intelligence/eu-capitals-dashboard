@@ -5,7 +5,9 @@ Personnellement je donnerais un peu plus d'importance à la météo, genre 60/40
 
 ## 2. Fiabilité de l'acquisition (1 appel vs 26)
 chaque connexion a une petite chance d'échouer (timeout, coupure réseau), et plus on en fait, plus la probabilité qu'au moins une échoue augmente. Par exemple, si une connexion a 1 % de chance d'échouer, avec 26 connexions on arrive à environ 23 % de chance qu'au moins une plante. En plus, 26 requêtes d'affilée depuis la même IP peuvent être vues comme du spam par l'API et être ralenties ou bloquées.
+Le commentaire du code confirme ça : avec une seule requête groupée, il n'y a qu'une seule connexion à réussir, et c'est aussi beaucoup plus rapide.
 ## 3. Provenance du facteur CO₂
+Avant de publier pour de vrais utilisateurs, je vérifierais la valeur dans la dernière publication officielle des facteurs DEFRA et j'indiquerais la source et l'année directement sur la page. Je ferais aussi attention au fait qu'un seul facteur pour toutes les villes est une simplification. Donc idéalement je proposerais plusieurs facteurs selon la distance, ou même le train pour les trajets courts.
 
 ## 4. Relatif vs absolu (normalisation)
 
