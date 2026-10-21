@@ -1,8 +1,8 @@
 import csv, json, math, time
 import requests
 
-ORIGIN_NAME = "berlin"
-ORIGIN_LAT, ORIGIN_LON = 48.0061, 0.1996 
+ORIGIN_NAME = "Berlin"
+ORIGIN_LAT, ORIGIN_LON = 52.5200, 13.4050
 EMISSIONS_FACTOR_KG_PER_KM = 0.15  # DEFRA-style short-haul factor -- verify/update
 
 def haversine_km(lat1, lon1, lat2, lon2):
