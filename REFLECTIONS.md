@@ -1,6 +1,7 @@
 # Réflexions TD1
 
 ## 1. Ma pondération météo vs CO₂
+Personnellement je donnerais un peu plus d'importance à la météo, genre 60/40. Pour une semaine de vacances, s'il pleut tous les jours le voyage est un peu raté. Par contre je n'ignorerais pas le CO₂ c-a-d si deux villes ont à peu près la même météo, je choisirais clairement la plus proche.
 
 ## 2. Fiabilité de l'acquisition (1 appel vs 26)
 
